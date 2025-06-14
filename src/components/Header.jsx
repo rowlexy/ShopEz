@@ -80,7 +80,10 @@ const Header = () => {
          bg-cyan-700 min-h-screen top-full flex flex-col justify-center">
             {/* Hide on medium screens and up (≥768px), but visible on mobile (<768px). */}
             <nav>
-                <ul className="flex flex-col items-center gap-6 text-xl"><HeaderList /></ul>
+                <ul className="flex flex-col items-center gap-6 text-xl">
+                    <HeaderList />
+                    <NavLink to="/login"><li>Login</li></NavLink>
+                </ul>
             </nav>
         </section>}
 
